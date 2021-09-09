@@ -1,6 +1,7 @@
 import Nav from './Components/Nav'
 import Banner from './Components/Banner'
-import HomeMain from './Components/HomeMain'
+import Homepage from './Components/Homepage'
+import Footer from './Components/Footer'
 
 
 function App () {
@@ -8,7 +9,8 @@ function App () {
     <div>
       <Nav />
       <Banner />
-      <HomeMain />
+      <Homepage />
+      <Footer />
     </div>
   );
 }

@@ -1,10 +1,10 @@
 
-import '../styles/HomeMain.css'
+import '../styles/Homepage.css'
 
 
-function HomeMain() {
+function Homepage() {
     return (
-    <div className='home-main'>
+    <div className='homepage-main'>
         <div className='accommodation-card'>
         <h1 className='accommodation-title'>Accommodation Title</h1>
         </div>
@@ -32,4 +32,4 @@ function HomeMain() {
     )
 }
 
-export default HomeMain
+export default Homepage

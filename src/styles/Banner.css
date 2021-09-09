@@ -1,17 +1,15 @@
 .banner {
-  margin-right: 2pc;
-  margin-left: 2pc;
   display: flex;
   position: relative;
   border-radius: 25px;
   height: 223px;
   justify-content: center;
-  opacity: 0.3;
+  width: auto;
 }
 
-.baner img {
+.banner img {
+  background-color: #000000;
   mix-blend-mode: darken;
-  opacity: 0.3;
   border-radius: 25px;
 }
 
