@@ -1,15 +1,17 @@
-import Nav from './Components/Nav'
-import Banner from './Components/Banner'
-import Homepage from './Components/Homepage'
-import Footer from './Components/Footer'
+import Nav from "./Components/Nav";
+import Banner from "./Components/Banner";
+import Homepage from "./Components/Homepage";
+import Footer from "./Components/Footer";
+import data from "./Components/data";
 
+function App() {
+  
 
-function App () {
   return (
     <div>
       <Nav />
       <Banner />
-      <Homepage />
+      <Homepage data={data} />
       <Footer />
     </div>
   );

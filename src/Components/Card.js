@@ -1,13 +1,10 @@
-// import '../styles/Card.css'
 
-// function Card(props) {
-//     return(
-//     <Card className='accommodation-card'>
-//         <div>
-//           <h1>Accommodation Title</h1>  
-//         </div>
-//     </Card>
-//     )
-// }
+import '../styles/Card.css'
 
-// export default Card
+const Card = (props) => {
+    const classes = 'card ' + props.className;
+  
+    return <div className={classes}>{props.children}</div>;
+  };
+  
+  export default Card;

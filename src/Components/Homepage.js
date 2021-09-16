@@ -1,35 +1,23 @@
+import "../styles/Homepage.css";
 
-import '../styles/Homepage.css'
-
-
-function Homepage() {
-    return (
-    <div className='homepage-main'>
-        <div className='accommodation-card'>
-        <h1 className='accommodation-title'>Accommodation Title</h1>
+function Homepage(props) {
+  return (
+    <div className="homepage-main">
+      {props.data.map((e) => (
+        <div
+          className="accommodation-card"
+          style={{
+            backgroundImage: "url(" + e.cover + ")",
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+          }}
+        >
+          <h1 className="accommodation-title">{e.title}</h1>
         </div>
-
-        <div className='accommodation-card'>
-        <h1 className='accommodation-title'>Accommodation Title</h1>
-        </div>
-
-        <div className='accommodation-card'>
-        <h1 className='accommodation-title'>Accommodation Title</h1>
-        </div>
-
-        <div className='accommodation-card'>
-        <h1 className='accommodation-title'>Accommodation Title</h1>
-        </div>
-
-        <div className='accommodation-card'>
-        <h1 className='accommodation-title'>Accommodation Title</h1>
-        </div>
-
-        <div className='accommodation-card'>
-        <h1 className='accommodation-title'>Accommodation Title</h1>
-        </div>
+      ))}
     </div>
-    )
+  );
 }
 
-export default Homepage
+export default Homepage;
