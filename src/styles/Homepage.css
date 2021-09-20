@@ -1,23 +1,22 @@
 .homepage-main {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   position: relative;
   justify-content: space-around;
-  background-color: #F6F6F6;
-  width: auto;
-  height: 829px;
+  background-color: #f6f6f6;
+  width: 100%;
   border-radius: 25px;
-   align-self: center;
-   margin-top: 43px;
-   padding: 56px;
-   flex-wrap: wrap;
+  align-self: center;
+  margin-top: 43px;
+  padding: 40px 10px;
+  flex-wrap: wrap;
 }
 
 .accommodation-card {
   height: 340px;
-  width: 340px;
+  width: 25%;
   display: flex;
-  width: 35 vw;
+  flex-wrap: wrap;
   background-color: #ff6060;
   background-image: linear-gradient(
     180deg,
@@ -26,6 +25,7 @@
   );
   position: relative;
   border-radius: 25px;
+  margin: 10px 2px 40px 0px;
 }
 
 h1 {
