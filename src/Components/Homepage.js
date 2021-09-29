@@ -1,7 +1,9 @@
+import Banner from "./Banner";
 import "../styles/Homepage.css";
 
 function Homepage(props) {
   return (
+    <div> <Banner/>
     <div className="homepage-main">
       {props.data.map((e) => (
         <div
@@ -16,6 +18,7 @@ function Homepage(props) {
           <h1 className="accommodation-title">{e.title}</h1>
         </div>
       ))}
+    </div>
     </div>
   );
 }
