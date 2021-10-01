@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Banner from "./Banner";
 import "../styles/Homepage.css";
 
@@ -14,8 +15,9 @@ function Homepage(props) {
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
           }}
-        >
+        >  <Link to="./Property">
           <h1 className="accommodation-title">{e.title}</h1>
+          </Link>
         </div>
       ))}
     </div>
