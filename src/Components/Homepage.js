@@ -15,7 +15,7 @@ function Homepage(props) {
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
           }}
-        >  <Link to="./Property">
+        >  <Link to="./apartment">
           <h1 className="accommodation-title">{e.title}</h1>
           </Link>
         </div>

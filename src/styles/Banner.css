@@ -2,7 +2,7 @@
   display: flex;
   position: relative;
   border-radius: 25px;
-  height: 223px;
+  height: 220px;
   justify-content: center;
   width: auto;
 }
@@ -11,6 +11,8 @@
   background-color: #000000;
   mix-blend-mode: darken;
   border-radius: 25px;
+  width: auto;
+  height: 220px;
   
 }
 

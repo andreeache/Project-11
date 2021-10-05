@@ -1,0 +1,78 @@
+.property {
+  display: flex;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.property-info {
+  display: flex;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.title {
+  color: #ff6060;
+  font: "Montserat";
+  font-size: 36px;
+}
+
+.location {
+  color: #ff6060;
+  font-size: 18px;
+}
+
+.host {
+  display: flex;
+}
+
+.host-name {
+  width: 93px;
+  height: 52px;
+  color: #ff6060;
+  font-size: 18px;
+  display: flex;
+  align-items: flex-end;
+  text-align: right;
+  margin-right: 10px;
+
+}
+
+.host-img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #c4c4c4;
+}
+
+.host-img img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #c4c4c4;
+  object-fit: cover;
+}
+
+.tags {
+  text-align: center;
+  width: 115px;
+  height: 25px;
+  background: #ff6060;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 180.6%;
+  margin: 10px 10px 10px 0px;
+}
+
+.tag-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+}

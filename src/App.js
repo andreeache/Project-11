@@ -1,6 +1,6 @@
 import { Route, Switch } from "react-router-dom";
 import Nav from "./Components/Nav";
-import Property from "./Components/Property";
+import Apartment from "./Components/Apartment";
 import About from "./Components/About";
 import Homepage from "./Components/Homepage";
 import Footer from "./Components/Footer";
@@ -14,10 +14,10 @@ function App() {
         <Route path="/" exact>
           <Homepage data={data} />
         </Route>
-        <Route path="/Property">
-          <Property></Property>
+        <Route path="/apartment">
+          <Apartment></Apartment>
         </Route>
-        <Route path="/About">
+        <Route path="/about">
           <About></About>
         </Route>
       </Switch>

@@ -12,7 +12,7 @@ function Nav() {
           <Link to="/">Home</Link>
         </li>
         <li className="tab-link">
-          <Link to="./About">About</Link>
+          <Link to="./about">About</Link>
         </li>
       </ul>
     </nav>
