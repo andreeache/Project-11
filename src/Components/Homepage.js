@@ -1,13 +1,14 @@
 import { Link } from "react-router-dom";
 import Banner from "./Banner";
 import "../styles/Homepage.css";
+import data from "./data";
 
 function Homepage(props) {
   return (
     <div> <Banner/>
     <div className="homepage-main">
       {props.data.map((e) => (
-        <div
+        <div key={data.id}
           className="accommodation-card"
           style={{
             backgroundImage: "url(" + e.cover + ")",

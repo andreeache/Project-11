@@ -5,6 +5,7 @@ import About from "./Components/About";
 import Homepage from "./Components/Homepage";
 import Footer from "./Components/Footer";
 import data from "./Components/data";
+import ErrorPage from "./Components/ErrorPage";
 
 function App() {
   return (
@@ -19,6 +20,9 @@ function App() {
         </Route>
         <Route path="/about">
           <About></About>
+        </Route>
+        <Route path="*">
+          <ErrorPage></ErrorPage>
         </Route>
       </Switch>
       <Footer />
