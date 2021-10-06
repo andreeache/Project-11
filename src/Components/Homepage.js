@@ -1,14 +1,13 @@
 import { Link } from "react-router-dom";
 import Banner from "./Banner";
 import "../styles/Homepage.css";
-import data from "./data";
 
 function Homepage(props) {
   return (
     <div> <Banner/>
     <div className="homepage-main">
       {props.data.map((e) => (
-        <div key={data.id}
+        <div key={e.id}
           className="accommodation-card"
           style={{
             backgroundImage: "url(" + e.cover + ")",
@@ -16,8 +15,10 @@ function Homepage(props) {
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
           }}
-        >  <Link to="./apartment">
-          <h1 className="accommodation-title">{e.title}</h1>
+        >
+          <Link to={location => `/apartment/${e.id}` }>
+          <h1 className="accommodation-title">
+            {e.title}</h1>
           </Link>
         </div>
       ))}

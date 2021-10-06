@@ -1,44 +1,37 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStar } from "@fortawesome/free-solid-svg-icons";
-import { faStar as faEmptyStar } from "@fortawesome/free-regular-svg-icons";
-
+import { useParams } from "react-router";
+import Rating from "./Rating";
 import Gallery from "./Gallery";
 import "../styles/Apartment.css";
+import data from "./data";
 
-function Apartment() {
+function Apartment(props) {
+  const params = useParams();
+  const apartment = data.find((ap) => ap.id === params.id);
+
   return (
     <div>
       <Gallery />
       <div className="property">
         <div className="property-info">
           <div className="property-main">
-            <div className="title">Cosy Appartement</div>
-            <div className="location">Paris - 17th arrondissement</div>
+            <div className="title">{apartment.title}</div>
+            <div className="location">{apartment.location}</div>
           </div>
 
           <div className="host">
-            <div className="host-name">Nathalie Jean</div>
+            <div className="host-name">{apartment.host.name}</div>
             <div className="host-img">
-              <img
-                src="https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-12.jpg"
-                alt="host"
-              />
+              <img src={apartment.host.picture} alt="host" />
             </div>
           </div>
         </div>
         <div className="features">
           <div className="tag-section">
-            <div className="tags">Batignolle</div>
-            <div className="tags">Batignolle</div>
-            <div className="tags">Batignolle</div>
+            {apartment.tags.map((t) => (
+              <div key={t} className="tags">{t}</div>
+            ))}
           </div>
-          <div>
-            {<FontAwesomeIcon icon={faStar} />}
-            {<FontAwesomeIcon icon={faStar} />}
-            {<FontAwesomeIcon icon={faStar} />}
-            {<FontAwesomeIcon icon={faEmptyStar} />}
-            {<FontAwesomeIcon icon={faEmptyStar} />}
-          </div>
+          <Rating rating={apartment.rating} />
         </div>
       </div>
       <div className="apartment-details">
