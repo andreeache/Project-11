@@ -76,3 +76,13 @@
     display: flex;
     justify-content: space-between;
 }
+
+.apartment-details{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.dropdown-apartment{
+  width: 40%;
+}

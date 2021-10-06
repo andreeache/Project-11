@@ -1,5 +1,6 @@
 import { useParams } from "react-router";
 import Rating from "./Rating";
+import DropDown from "./DropDown";
 import Gallery from "./Gallery";
 import "../styles/Apartment.css";
 import data from "./data";
@@ -10,7 +11,7 @@ function Apartment(props) {
 
   return (
     <div>
-      <Gallery />
+      <Gallery cover={apartment.cover}/>
       <div className="property">
         <div className="property-info">
           <div className="property-main">
@@ -35,16 +36,21 @@ function Apartment(props) {
         </div>
       </div>
       <div className="apartment-details">
-        <div>
-          Description
-          <div>Description text here</div>
+        <div className="dropdown-apartment" title="Header">
+          <DropDown title="Description" className="dropdown-content">
+          {apartment.description}
+          </DropDown>
         </div>
-        <div>
-          Amenities
+        <div className="dropdown-apartment" title="Header">
+          <DropDown title="Amenities" className="dropdown-content">
           <ul>
-            <li>List elements</li>
+            <li>{apartment.Amenities.map((a) => (
+              <div key={a} className="tags">{a}</div>
+            ))}</li>
           </ul>
+          </DropDown>
         </div>
+
       </div>
     </div>
   );
