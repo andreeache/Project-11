@@ -4,7 +4,7 @@ import { faStar as faEmptyStar } from "@fortawesome/free-regular-svg-icons";
 
 const Rating = (props) => {
   const rating = parseInt(props["rating"]);
-  const myfunc = () => {
+  const ratingStars = () => {
     let r = [];
     for (let i = 0; i < rating; i++) {
       r.push(<FontAwesomeIcon icon={faStar} />);
@@ -14,7 +14,7 @@ const Rating = (props) => {
     }
     return r;
   };
-  return <div>{myfunc()}</div>;
+  return <div>{ratingStars()}</div>;
 };
 
 export default Rating;
