@@ -11,7 +11,7 @@ function Apartment(props) {
 
   return (
     <div>
-      <Gallery cover={apartment.cover}/>
+      <Gallery images={apartment.pictures}/>
       <div className="property">
         <div className="property-info">
           <div className="property-main">
