@@ -26,6 +26,11 @@
 
 .host {
   display: flex;
+  flex-direction: column;
+  
+}
+.host-details{
+  display: flex;
 }
 
 .host-name {
@@ -37,7 +42,6 @@
   align-items: flex-end;
   text-align: right;
   margin-right: 10px;
-
 }
 
 .host-img {
@@ -55,7 +59,12 @@
   object-fit: cover;
 }
 
+.rate {
+  display: flex;
+}
+
 .tags {
+  width: 100%;
   text-align: center;
   width: 115px;
   height: 25px;
@@ -65,6 +74,7 @@
   font-size: 14px;
   line-height: 180.6%;
   margin: 10px 10px 10px 0px;
+  padding: 4px 5px;
 }
 
 .tag-section {
@@ -72,17 +82,64 @@
   flex-wrap: wrap;
 }
 
-.features {
-    display: flex;
-    justify-content: space-between;
-}
 
-.apartment-details{
+
+.apartment-details {
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
 }
 
-.dropdown-apartment{
-  width: 40%;
+.dropdown-apartment {
+  width: 47%;
+  padding-right: 30px;
 }
+
+
+.dropdown-apartment li {
+  list-style-type: none;
+  margin: -20px;
+  padding: 5px 0;
+}
+
+.description {
+  padding: 5px 0;
+
+}
+
+
+@media screen and (max-width: 800px) {
+  .property {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .property-main{
+    display: flex;
+    flex-direction: column;
+  }
+  .title{
+font-size: 18px;
+  }
+  .host{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .location {
+    font-size: 14px;
+    margin-top: 10px;
+    width: 100%;
+  }
+.dropdown-apartment{
+  width: 100%;
+  margin: 10px 0;
+}
+.apartment-details{
+  display: flex;
+  flex-direction: column;
+}
+
+}
+
+

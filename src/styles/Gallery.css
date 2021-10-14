@@ -16,7 +16,6 @@ position: relative;
 
 .arrow{
   color: #fff;
-  /* color: black; */
   position: absolute;
   top: 50%;
 }
@@ -35,4 +34,14 @@ position: relative;
 
 .arrow-right {
   right: 6px;
+}
+
+@media screen and (max-width: 800px) {
+  .gallery,
+  .gallery img {
+    height: 255px;
+  }
+  .arrow svg {
+    height: 20px;
+  }
 }

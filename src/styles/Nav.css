@@ -3,7 +3,6 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
-  
   margin-top: 40px;
   padding: 0 20px;
 }
@@ -26,4 +25,45 @@
 
 .main-nav li:nth-child(2) {
   margin-left: 20px;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #FF6060;
+}
+
+/* a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+} */
+
+.tabs a:hover,
+.tabs a:active,
+.tabs a.active{
+  padding-bottom: 1px;
+  border-bottom: 2px solid #ff6060;
+}
+
+@media screen and (max-width: 800px) {
+  .main-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  .main-nav img {
+    width: 145px;
+    height: 47px;
+  }
+  
+  .main-nav ul {
+    margin-right: 5px;
+  }
 }

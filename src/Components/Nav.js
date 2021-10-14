@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import logo from "../assets/LOGO.png";
 import "../styles/Nav.css";
 
@@ -6,13 +6,13 @@ function Nav() {
   // const title = 'Kasa'
   return (
     <nav className="main-nav">
-      <img src={logo} alt="kasa" className="kasa-logo" />
+     <NavLink to="/">  <img src={logo} alt="kasa" className="kasa-logo" /></NavLink>
       <ul className="tabs">
         <li className="tab-link">
-          <Link to="/">Home</Link>
+          <NavLink activeClassName="tabs.active" to="/">Home</NavLink>
         </li>
         <li className="tab-link">
-          <Link to="/about">About</Link>
+          <NavLink activeClassName="tabs" to="/about" >About</NavLink>
         </li>
       </ul>
     </nav>

@@ -3,10 +3,9 @@
   height: auto;
 }
 
-.dropdown-category{
+.dropdown-category {
   margin: 30px 8%;
   border-radius: 5px;
-
 }
 .dropdown-title {
   width: 100%;
@@ -16,7 +15,6 @@
   border-radius: 5px;
   display: flex;
   justify-content: space-between;
-  
 }
 
 .dropdown-content {
@@ -26,5 +24,6 @@
   padding: 10px;
   border-radius: 5px;
   margin-top: 0px;
-
 }
+
+
