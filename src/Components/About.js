@@ -3,7 +3,6 @@ import DropDown from "./DropDown";
 
 import about from "../assets/about.png";
 import "../styles/Dropdown.css";
-import "../styles/Banner.css";
 
 function About() {
   return (
@@ -11,7 +10,7 @@ function About() {
       <div className="banner">
         <img src={about} alt="banner background" className="banner-img" />
       </div>
-      <div className="dropdown">
+      <div className="dropdown about-dropdown">
 
         <div className="dropdown-category" title="Header">
           <DropDown title="Reliability" className="dropdown-content">
