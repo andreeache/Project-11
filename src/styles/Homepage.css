@@ -59,11 +59,12 @@ h1 {
   .accommodation-card{
     width: 100%;
     height: 255px;
-    margin: 10px 5px;
+    margin: 10px 10px 10px 0px;
+
   }
 
-  .accommodation-card img{
+  /* .accommodation-card img{
     margin-right: 10px;
-  }
+  } */
   
   }
