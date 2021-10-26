@@ -28,9 +28,8 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  
 }
-.host-details{
+.host-details {
   display: flex;
 }
 
@@ -83,8 +82,6 @@
   flex-wrap: wrap;
 }
 
-
-
 .apartment-details {
   display: flex;
   justify-content: space-between;
@@ -96,7 +93,6 @@
   padding-right: 30px;
 }
 
-
 .dropdown-apartment li {
   list-style-type: none;
   margin: -20px;
@@ -105,9 +101,7 @@
 
 .description {
   padding: 5px 0;
-
 }
-
 
 @media screen and (max-width: 800px) {
   .property {
@@ -115,33 +109,39 @@
     display: flex;
     flex-direction: column;
   }
-  .property-main{
+
+  .property-info {
+    margin-bottom: 5px;
+  }
+  .property-main {
     display: flex;
     flex-direction: column;
   }
-  .title{
-font-size: 18px;
+  .title {
+    font-size: 18px;
   }
-  .host{
+  .host {
     width: 100%;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+    margin-right: 5px;
   }
   .location {
     font-size: 14px;
     margin-top: 10px;
     width: 100%;
   }
-.dropdown-apartment{
- width: 93%;
-  margin: 20px 1%;
+  .rate {
+    line-height: 40px;
+  }
+  .dropdown-apartment {
+    width: auto;
+    margin: 20px 1%;
+  }
+  .apartment-details {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+  }
 }
-.apartment-details{
-  display: flex;
-  flex-direction: column;
-}
-
-}
-
-

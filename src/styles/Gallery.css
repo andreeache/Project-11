@@ -40,6 +40,7 @@ position: relative;
   .gallery,
   .gallery img {
     height: 255px;
+    margin-right: 5px;
   }
   .arrow svg {
     height: 20px;
