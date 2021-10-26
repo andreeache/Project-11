@@ -3,7 +3,7 @@
   position: relative;
   justify-content: space-around;
   background-color: #f6f6f6;
-  width: 100%;
+  width: auto;
   border-radius: 25px;
   align-self: center;
   margin-top: 43px;
@@ -28,7 +28,7 @@
   );
   position: relative;
   border-radius: 25px;
-  margin: 10px 2px 40px 0px;
+  margin: 10px 0px 40px 0px;
 }
 
 h1 {

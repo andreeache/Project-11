@@ -85,12 +85,12 @@
 .apartment-details {
   display: flex;
   justify-content: space-between;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 
 .dropdown-apartment {
   width: 47%;
-  padding-right: 30px;
+  padding-right: 20px;
 }
 
 .dropdown-apartment li {
