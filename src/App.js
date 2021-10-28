@@ -1,4 +1,4 @@
-import { Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Nav from "./Components/Nav";
 import Apartment from "./Components/Apartment";
 import About from "./Components/About";
@@ -9,7 +9,7 @@ import ErrorPage from "./Components/ErrorPage";
 
 function App() {
   return (
-    <div>
+    <Router>
       <Nav />
       <Switch>
         <Route path="/" exact>
@@ -26,7 +26,7 @@ function App() {
         </Route>
       </Switch>
       <Footer />
-    </div>
+    </Router>
   );
 }
 
