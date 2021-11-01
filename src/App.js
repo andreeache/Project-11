@@ -15,6 +15,9 @@ function App() {
         <Route path="/" exact>
           <Homepage data={data} />
         </Route>
+        <Route path="/Project-11" exact>
+          <Homepage data={data} />
+        </Route>
         <Route path="/apartment/:id">
           <Apartment />
         </Route>
